@@ -1,0 +1,2 @@
+pulsectl==17.9.3
+pyalsaaudio==0.8.4
