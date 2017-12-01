@@ -1,0 +1,6 @@
+! Free Alt_L bind from mod1
+remove mod1 = Alt_L
+! This is the | \ key to the right of the spacebar. Bind to left alt.
+keycode 94 = Alt_L
+! And finally, assign left alt to mod3 for i3wm
+add mod3 = Alt_L
