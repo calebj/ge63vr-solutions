@@ -1,0 +1,26 @@
+Section "ServerLayout"
+    Identifier  "Layout0"
+    Option      "AutoAddDevices" "false"
+    Option      "AutoAddGPU" "false"
+EndSection
+
+Section "Device"
+    Identifier  "DiscreteNvidia"
+    Driver      "nvidia"
+    VendorName  "NVIDIA Corporation
+    Option "ProbeAllGpus" "false"
+    Option "NoLogo" "true"
+
+    # These aren't commented out by default.
+    #Option "UseEDID" "false"
+    #Option "UseDisplayDevice" "none"
+
+    # This is new, and allows it to work without anything connected
+    Option "AllowEmptyInitialConfiguration"
+EndSection
+
+# This is also new, but I don't think it does much
+Section "Screen"
+    Identifier "Screen0"
+    Device "DiscreteNvidia"
+EndSection
