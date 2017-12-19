@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from pulsectl import Pulse, PulseLoopStop
 import alsaaudio
 import select
